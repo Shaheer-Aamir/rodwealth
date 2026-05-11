@@ -242,6 +242,12 @@ h6 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+@media (max-width: 768px){
+  .btn-get-quote{
+    font-size: 11px !important;
+    padding: 8px 10px;
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -879,8 +885,8 @@ section,
 
 @media (max-width: 576px) {
   .hero .hero-buttons {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 8px;
   }
 }
 
@@ -921,7 +927,32 @@ section,
   display: flex;
   gap: 30px;
 }
+/* Mobile Responsive Buttons */
+@media (max-width: 768px) {
+  .hero .hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: stretch;
+  }
 
+  .hero .hero-buttons .btn-primary,
+  .hero .hero-buttons .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .hero .hero-buttons .btn-primary,
+  .hero .hero-buttons .btn-secondary {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 768px) {
   .hero .trust-badges {
     flex-wrap: wrap;
@@ -1233,6 +1264,11 @@ section,
 
   .about .about-image .experience-badge p {
     font-size: 0.7rem;
+  }
+  .about .about-image .experience-badge2{
+    scale: 0.65;
+    bottom: 10px;
+    left: -30px;
   }
 }
 
@@ -2271,7 +2307,7 @@ section,
   }
 
   .certifications h2 {
-    font-size: 2.2rem;
+    font-size: 1.3rem;
   }
 
   .certifications .badge-highlight {
