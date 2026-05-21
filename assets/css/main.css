@@ -86,7 +86,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
-.php-email-form .error-message {
+.custom-email-form .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -96,7 +96,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .sent-message {
+.custom-email-form .sent-message {
   display: none;
   color: #ffffff;
   background: #059652;
@@ -106,7 +106,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .loading {
+.custom-email-form .loading {
   display: none;
   background: var(--surface-color);
   text-align: center;
@@ -114,7 +114,7 @@ h6 {
   margin-bottom: 24px;
 }
 
-.php-email-form .loading:before {
+.custom-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -123,10 +123,10 @@ h6 {
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
+  animation: custom-email-form-loading 1s linear infinite;
 }
 
-@keyframes php-email-form-loading {
+@keyframes custom-email-form-loading {
   0% {
     transform: rotate(0deg);
   }
@@ -624,8 +624,8 @@ h6 {
 }
 
 .footer .credits {
-  margin-top: 6px;
-  font-size: 13px;
+  margin-top: 9px;
+  font-size: 11px;
 }
 
 /*--------------------------------------------------------------
@@ -923,7 +923,7 @@ section,
   padding: 14px 32px;
   background-color: var(--accent-color);
   color: var(--contrast-color);
-  border-radius: 4px;
+  border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -940,7 +940,7 @@ section,
   background-color: transparent;
   color: var(--default-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  border-radius: 4px;
+  border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -1005,14 +1005,15 @@ section,
 }
 
 .hero .trust-badges .badge-item .badge-text .count {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--heading-color);
   line-height: 1;
+  margin-bottom: 4px;
 }
 
 .hero .trust-badges .badge-item .badge-text .label {
-  font-size: 14px;
+  font-size: 13px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
@@ -1117,7 +1118,7 @@ section,
 }
 
 .about .achievement-boxes .achievement-box h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
   color: var(--accent-color);
@@ -1564,7 +1565,7 @@ section,
   color: rgba(255, 255, 255, 0.85);
 }
 
-.services .cta-container .btn-cta {
+.btn-cta {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 0.85rem 2.2rem;
@@ -1573,9 +1574,10 @@ section,
   transition: all 0.3s ease;
 }
 
-.services .cta-container .btn-cta:hover {
+.btn-cta:hover {
   background-color: color-mix(in srgb, var(--accent-color), #000 15%);
   transform: translateY(-3px);
+  color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -4115,15 +4117,15 @@ section,
   margin: 0;
 }
 
-.quote .php-email-form .form-group {
+.quote .custom-email-form .form-group {
   margin-bottom: 20px;
 }
 
-.quote .php-email-form input[type=text],
-.quote .php-email-form input[type=email],
-.quote .php-email-form input[type=tel],
-.quote .php-email-form select,
-.quote .php-email-form textarea {
+.quote .custom-email-form input[type=text],
+.quote .custom-email-form input[type=email],
+.quote .custom-email-form input[type=tel],
+.quote .custom-email-form select,
+.quote .custom-email-form textarea {
   width: 100%;
   padding: 14px 18px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
@@ -4134,25 +4136,25 @@ section,
   background-color: var(--surface-color);
 }
 
-.quote .php-email-form input[type=text]:focus,
-.quote .php-email-form input[type=email]:focus,
-.quote .php-email-form input[type=tel]:focus,
-.quote .php-email-form select:focus,
-.quote .php-email-form textarea:focus {
+.quote .custom-email-form input[type=text]:focus,
+.quote .custom-email-form input[type=email]:focus,
+.quote .custom-email-form input[type=tel]:focus,
+.quote .custom-email-form select:focus,
+.quote .custom-email-form textarea:focus {
   outline: none;
   border-color: var(--accent-color);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-.quote .php-email-form input[type=text]::placeholder,
-.quote .php-email-form input[type=email]::placeholder,
-.quote .php-email-form input[type=tel]::placeholder,
-.quote .php-email-form select::placeholder,
-.quote .php-email-form textarea::placeholder {
+.quote .custom-email-form input[type=text]::placeholder,
+.quote .custom-email-form input[type=email]::placeholder,
+.quote .custom-email-form input[type=tel]::placeholder,
+.quote .custom-email-form select::placeholder,
+.quote .custom-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
-.quote .php-email-form select {
+.quote .custom-email-form select {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 16px center;
@@ -4161,12 +4163,12 @@ section,
   appearance: none;
 }
 
-.quote .php-email-form textarea {
+.quote .custom-email-form textarea {
   resize: vertical;
   min-height: 120px;
 }
 
-.quote .php-email-form button[type=submit] {
+.quote .custom-email-form button[type=submit] {
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 14px 40px;
@@ -4178,7 +4180,7 @@ section,
   transition: all 0.3s ease;
 }
 
-.quote .php-email-form button[type=submit]:hover {
+.quote .custom-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), #000 10%);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 60%);
@@ -5824,5 +5826,146 @@ section,
   .why-us .stats-highlight {
     padding: 40px 20px;
     margin-top: 40px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Gallery Slider Section
+--------------------------------------------------------------*/
+.gallery-slider {
+  overflow: hidden;
+}
+
+.gallery-slider .gallery-container {
+  padding: 0px 0 0px;
+  position: relative;
+}
+
+.gallery-slider .swiper-wrapper {
+  height: auto !important;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.gallery-slider .gallery-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.gallery-slider .gallery-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-slider .gallery-img img {
+  transition: transform 0.6s ease;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.gallery-slider .gallery-img .gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: color-mix(in srgb, var(--accent-color), transparent 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.gallery-slider .gallery-img .gallery-overlay i {
+  color: var(--contrast-color);
+  font-size: 3rem;
+  transform: scale(0.5);
+  transition: all 0.3s ease;
+}
+
+.gallery-slider .gallery-img:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-slider .gallery-img:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-slider .gallery-img:hover .gallery-overlay i {
+  transform: scale(1);
+}
+
+.gallery-slider .swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+
+.gallery-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 2px solid var(--accent-color);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.gallery-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--accent-color);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.gallery-slider .swiper-button-next,
+.gallery-slider .swiper-button-prev {
+  color: var(--accent-color);
+  background: var(--surface-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.gallery-slider .swiper-button-next:after,
+.gallery-slider .swiper-button-prev:after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.gallery-slider:hover .swiper-button-next,
+.gallery-slider:hover .swiper-button-prev {
+  opacity: 0.9;
+}
+
+.gallery-slider:hover .swiper-button-next:hover,
+.gallery-slider:hover .swiper-button-prev:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+@media (max-width: 991px) {
+  .gallery-slider .gallery-item {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .gallery-slider .swiper-button-next,
+  .gallery-slider .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-slider .swiper-wrapper {
+    padding: 15px 0;
+  }
+
+  .gallery-slider .gallery-img .gallery-overlay i {
+    font-size: 2rem;
   }
 }
