@@ -823,7 +823,14 @@ section,
   font-weight: 500;
   font-family: var(--heading-font);
 }
-
+@media (max-width: 768px){
+  .section-title-page h2{
+    font-size: 20px;
+  }
+  .section-title-page p{
+    font-size: 14px;
+  }
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -894,9 +901,22 @@ section,
 }
 
 @media (max-width: 768px) {
+  .hero .hero-content{
+    text-align: center;
+  }
+  .hero .hero-content .subtitle{
+    font-size: 12px !important;
+  }
+  .hero .hero-content p{
+    font-size: 16px !important;
+  }
   .hero .hero-content h1 {
     font-size: 32px;
   }
+  .hero .trust-badges{
+    display: none !important;
+  }
+
 }
 
 .hero .hero-content p {
@@ -1307,7 +1327,7 @@ section,
   }
 
   .about .achievement-boxes .achievement-box h3 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
   .about .achievement-boxes .achievement-box p {
@@ -1590,7 +1610,7 @@ section,
   }
 
   .services .cta-container {
-    padding: 2rem;
+    padding: 3rem 2rem;
   }
 
   .services .cta-container h3 {
@@ -1606,6 +1626,12 @@ section,
 
   .services .service-list-item .service-list-icon {
     margin-bottom: 0.5rem;
+  }
+  .services .cta-container h3{
+    font-size: 1.6rem;
+  }
+  .services .cta-container p{
+    font-size: 12px;
   }
 }
 
