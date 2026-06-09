@@ -110,7 +110,6 @@ $status_labels = [
     font-weight: 500;
     letter-spacing: 0.4px;
   }
-
   .nav {
     padding: 16px 12px;
     flex: 1;
@@ -517,14 +516,14 @@ $status_labels = [
     <p>Admin Dashboard</p>
   </div>
   <nav class="nav">
-    <a href="index.php" class="active"><span class="icon">📊</span> All Leads</a>
-    <a href="index.php?status=new"><span class="icon">🟢</span> New Leads
+    <a href="index.php" class="active"><span class="icon"><i class="bi bi-people-fill"></i></span> All Leads</a>
+    <a href="index.php?status=new"><span class="icon"><i class="bi bi-person-plus-fill"></i></span> New Leads
       <?php if ($stats['new'] > 0): ?>
         <span style="margin-left:auto;background:#14529d;color:#fff;border-radius:20px;padding:1px 7px;font-size:11px"><?= $stats['new'] ?></span>
       <?php endif; ?>
     </a>
-    <a href="index.php?source=homepage"><span class="icon">🏠</span> Homepage Form</a>
-    <a href="index.php?source=contact"><span class="icon">📬</span> Contact Form</a>
+    <a href="index.php?source=homepage"><span class="icon"><i class="bi bi-house-door-fill"></i></span> Homepage Form</a>
+    <a href="index.php?source=contact"><span class="icon"><i class="bi bi-envelope-fill"></i></span> Contact Form</a>
     <a href="export.php?<?= http_build_query(array_filter(['status'=>$status_filter,'source'=>$source_filter,'search'=>$search])) ?>" class="btn-export" style="margin-top:12px;border-radius:8px;font-size:13px;color:#fff;">⬇ Export CSV</a>
   </nav>
   <div class="sidebar-footer">

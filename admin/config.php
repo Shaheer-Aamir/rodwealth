@@ -1,9 +1,9 @@
 <?php
 // Database Configuration
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');         // XAMPP default
-define('DB_PASS', '');             // XAMPP default (empty)
-define('DB_NAME', 'construction_leads');
+define('DB_USER', 'u226757524_rodwealthadmin');         // XAMPP default
+define('DB_PASS', 'RodWealth@2026');             // XAMPP default (empty)
+define('DB_NAME', 'u226757524_constructiondb');
 
 // Admin Credentials (change these!)
 define('ADMIN_USERNAME', 'admin');
